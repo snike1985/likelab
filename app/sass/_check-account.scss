@@ -1,0 +1,312 @@
+/*---------- check-account ----------*/
+.check-account {
+  display: none;
+}
+
+@media (min-width: $phone-landscape) {
+  .check-account {
+
+  }
+}
+@media (min-width: $tablet-portrait) {
+  .check-account {
+
+  }
+}
+@media (min-width: $tablet-landscape) {
+  .check-account {
+
+  }
+}
+@media (min-width: $desktop) {
+  .check-account {
+    position: relative;
+    display: block;
+    padding-top: 80px;
+    background-color: #fbfcfd;
+
+    &__title {
+      width: 982px;
+      position: relative;
+      left: -10px;
+      margin: 0 auto 35px;
+      text-align: center;
+      font-size: 16px;
+      letter-spacing: .7px;
+      color: #5551ea;
+      text-transform: uppercase;
+      @include main-font3();
+
+      span {
+        display: block;
+        position: relative;
+        left: 21px;
+        padding-top: 21px;
+        font-size: 27px;
+        letter-spacing: -0.2px;
+        color: #302d96;
+        text-transform: none;
+        @include main-font1();
+      }
+    }
+
+    &__form {
+      position: relative;
+      height: 55px;
+      width: 410px;
+      margin: 0 auto 68px;
+      border-radius: 2px;
+      background-color: #fff;
+      box-shadow: 0 1px 16px 0 rgba(194, 199, 204, 0.32);
+      font-size: 16px;
+      @include main-font2();
+
+      input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 304px;
+        padding: 0 22px;
+        background: none;
+        border: none;
+        color: #302d96;
+        font-size: 16px;
+        @include main-font2();
+
+        &::-webkit-input-placeholder {
+          color: #302d96;
+        }
+        &::-moz-placeholder {
+          color: #302d96;
+        }
+        &:-ms-input-placeholder {
+          color: #302d96;
+        }
+        &:-moz-placeholder {
+          color: #302d96;
+        }
+      }
+
+      button[type=submit] {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 106px;
+        background: none;
+        border: none;
+        padding: 0;
+        color: #5551ea;
+        transition: background .3s ease-in-out, color .3s ease-in-out;
+        font-size: 16px;
+        @include main-font2();
+
+        &:hover {
+          background-color: #fa6f96;
+          color: #fff;
+        }
+      }
+    }
+
+    &__wrap {
+      width: 410px;
+      margin: 0 auto;
+      border-radius: 2px 0 2px;
+      background-color: #fff;
+      box-shadow: 0 1px 16px 0 rgba(194, 199, 204, 0.32);
+    }
+
+    &__head {
+      border-bottom: 1px solid #dddae7;
+
+      &-statistic {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 21px 14px;
+
+        li {
+          color: #9590a8;
+          font-size: 14px;
+          text-align: center;
+
+          &:nth-child(1) {
+            width: 82px;
+          }
+
+          &:nth-child(2) {
+
+          }
+
+          &:nth-child(3) {
+
+          }
+
+          &:nth-child(4) {
+
+          }
+
+          strong {
+            display: block;
+            font-size: 23.5px;
+            color: #302d96;
+            @include main-font3();
+          }
+
+          img {
+            overflow: hidden;
+            width: 82px;
+            height: 82px;
+            border-radius: 50%;
+          }
+        }
+      }
+
+      &-title {
+        display: block;
+        padding: 1px 6px 26px 15px;
+        color: #2b2979;
+        font-size: 17.6px;
+        @include main-font2();
+      }
+    }
+
+    &__tabs {
+
+      &-head {
+        display: flex;
+
+        span {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 25%;
+          height: 48.5px;
+
+          svg {
+
+          }
+
+          &.active svg {
+            fill: #5551ea;
+          }
+        }
+      }
+
+      &-content {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #f0f0f0;
+
+        span {
+          display: block;
+          width: calc(100%/3 - 2px/3);
+          height: 125px;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          border-left: 1px solid #f0f0f0;
+
+          &:nth-child(3n - 2) {
+            border-left: none;
+          }
+        }
+      }
+    }
+
+    &__list {
+    }
+
+    &__item {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 245px;
+      padding-left: 49px;
+      color: #60538f;
+      font-size: 16px;
+      line-height: 26px;
+
+      &.first {
+        bottom: 346px;
+        margin-left: -539px;
+      }
+
+      &.second {
+        bottom: 152px;
+        margin-left: -575px;
+
+        svg { margin-top: 3px; }
+      }
+
+      &.third {
+        bottom: 253px;
+        margin-left: 383px;
+
+        svg { left: 6px; }
+      }
+
+      &.fourth {
+        bottom: 88px;
+        margin-left: 310px;
+      }
+
+      svg {
+        @include absoluteCenterY();
+        left: 0;
+      }
+
+      strong {
+        color: #5551ea;
+        @include main-font3();
+      }
+
+      dl {
+
+        &.strong {
+          color: #5551ea;
+          @include main-font3();
+        }
+
+        dt {
+          display: inline;
+        }
+        dd {
+          display: inline;
+        }
+      }
+    }
+
+    &__lines {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+
+      > div {
+        position: absolute;
+      }
+      &-first {
+        bottom: 308px;
+        margin-left: -416px;
+      }
+
+      &-second {
+        bottom: 34px;
+        margin-left: -451px;
+      }
+
+      &-third {
+        bottom: 47px;
+        margin-left: 3px;
+      }
+
+      &-fourth {
+        bottom: 28px;
+        margin-left: 139px;
+      }
+    }
+  }
+}
+/*---------- /check-account ---------*/
+

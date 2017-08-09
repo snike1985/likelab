@@ -1,0 +1,46 @@
+/*---------- logo ----------*/
+.logo {
+  position: absolute;
+  top: 22px;
+  left: 3px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 25px;
+  @include main-font2();
+
+  svg {
+    height: 42px;
+    margin-right: -4px;
+  }
+}
+
+@media (min-width: $phone-landscape) {
+  .logo {
+
+  }
+}
+@media (min-width: $tablet-portrait) {
+  .logo {
+
+  }
+}
+@media (min-width: $tablet-landscape) {
+  .logo {
+
+  }
+}
+@media (min-width: $desktop) {
+  .logo {
+    top: 36px;
+    left: 41px;
+    font-size: 21px;
+
+    svg {
+      height: 38px;
+      margin-right: -10px;
+    }
+  }
+}
+/*---------- /logo ---------*/
+
